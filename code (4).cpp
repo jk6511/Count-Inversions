@@ -5,9 +5,7 @@ using namespace std;
  // } Driver Code Ends
 class Solution{
   public:
-    // arr[]: Input Array
-    // N : Size of the Array arr[]
-    // Function to count inversions in the array.
+   
     long long int inversionCount(long long int arr[], long long int N){
         long long int ans[N];
         return mergesrt(arr,ans,0,N-1);
