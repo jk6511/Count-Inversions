@@ -1,16 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
-
-
- // } Driver Code Ends
 class Solution{
   public:
-   
     long long int inversionCount(long long int arr[], long long int N){
         long long int ans[N];
-        return mergesrt(arr,ans,0,N-1);
-        
-        
+        return mergesrt(arr,ans,0,N-1);    
     }
     long long int mergesrt(long long int arr[],long long int ans[],long long int left,long long int right ){
         long long int mid, count=0;
@@ -48,20 +42,13 @@ class Solution{
         }
         return sum;
     }
-
 };
-
-
-
-int main() {
-    
+int main() {  
     long long T;
     cin >> T;
-    
     while(T--){
         long long N;
-        cin >> N;
-        
+        cin >> N;   
         long long A[N];
         for(long long i = 0;i<N;i++){
             cin >> A[i];
